@@ -24,7 +24,7 @@
                                 <div class="field-body">
                                     <div class="field">
                                         <div class="control">
-                                            <input id="email" class="input{{ $errors->has('email') ? ' is-danger' : '' }}" type="email" name="email" value="{{ old('email') }}" required>
+                                            <input id="email" class="input{{ $errors->has('email') ? ' is-danger' : '' }}" type="email" name="email" value="{{ $email ?? old('email') }}" required>
                                         </div>
                                         @if ($errors->has('email'))
                                             <p class="help is-danger">
